@@ -361,6 +361,6 @@ The project showcased advanced SQL techniques including complex CTEs, window fun
 <div align="center">
 
 **🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/SQLPortoflio/Baby%20Names%20Uncovered/BabyName_Project_Milos_Analysis.sql)**  
-**📊 [Back to SQL Projects Portfolio](../)**
+**📊 [Back to SQL Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/SQLPortoflio)**
 
 </div>
