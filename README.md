@@ -63,7 +63,7 @@ Welcome to my data analytics portfolio! I'm **Miloš Ilić**, a dedicated and re
 
 This repository showcases my analytical projects across four key domains, developed through **15+ years of hands-on experience** with Fortune 500 companies and major European enterprises:
 
-### 📊 [SQL Projects](./SQL-Projects/)
+### 📊 [SQL Projects](https://github.com/milosilic2704/ProjectPorfolio/tree/main/SQLPortoflio)
 > Database design, complex queries, and data manipulation projects
 - **Master Data Management** - Tibco EBX implementations (Heineken project)
 - **Advanced SQL Queries** - Complex joins, window functions, CTEs
