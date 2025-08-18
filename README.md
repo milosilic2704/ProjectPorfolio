@@ -64,32 +64,12 @@ Welcome to my data analytics portfolio! I'm **Miloš Ilić**, a dedicated and re
 This repository showcases my analytical projects across four key domains, developed through **15+ years of hands-on experience** with Fortune 500 companies and major European enterprises:
 
 ### 📊 [SQL Projects](https://github.com/milosilic2704/ProjectPorfolio/tree/main/SQLPortoflio)
-> Database design, complex queries, and data manipulation projects
-- **Master Data Management** - Tibco EBX implementations (Heineken project)
-- **Advanced SQL Queries** - Complex joins, window functions, CTEs
-- **Database Optimization** - Performance tuning from banking sector experience
-- **ETL Processes** - Data harmonization and governance frameworks
 
 ### 📈 [Power BI Projects](./PowerBI-Projects/)
-> Interactive dashboards and business intelligence solutions
-- **Executive Dashboards** - C-level reporting for multinational teams
-- **Customer Journey Analytics** - Engagement analysis (Clarivate project)
-- **Financial Reporting** - Banking and fintech solutions (Erste Bank experience)
-- **Real-time Monitoring** - SLA tracking and operational excellence dashboards
 
 ### 📋 [Excel Projects](./Excel-Projects/)
-> Advanced spreadsheet analysis and automation
-- **Financial Models** - Budget planning and variance analysis
-- **VBA Automation** - Process optimization from banking operations
-- **Advanced Analytics** - Statistical analysis and forecasting
-- **Reporting Templates** - Standardized solutions for enterprise clients
 
 ### 🐍 [Python Projects](./Python-Projects/)
-> Data science, machine learning, and automation scripts
-- **Data Processing** - Large-scale data transformation and cleaning
-- **Predictive Analytics** - Customer retention and engagement models
-- **Automation Scripts** - Process optimization and task scheduling
-- **API Integration** - Data pipeline development and maintenance
 
 ---
 
