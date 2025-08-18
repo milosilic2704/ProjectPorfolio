@@ -170,18 +170,6 @@ As a **PhD in Economics**, I've contributed to academic research in finance and 
 
 ---
 
-## 🚧 Portfolio Status
-
-> **Note**: This portfolio represents **15+ years of data expertise** applied across banking, consulting, and technology sectors. Some project folders may show work-in-progress as I continuously add new case studies and innovative solutions from my ongoing consulting work.
-
-**Current Status:**
-- ✅ SQL Projects
-- ✅ Power BI Projects
-- 🔄 Excel Projects
-- 🔄 Python Projects
-
----
-
 <div align="center">
 
 ### 💡 *"Expert in data governance, project management, and change management, consistently delivering exceptional results in complex environments"*
