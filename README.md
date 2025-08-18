@@ -106,7 +106,7 @@ This repository showcases my analytical projects across four key domains, develo
 - Reduced data discrepancies significantly
 - Built integrated Power BI insights
 
-[View Project →](./SQL-Projects/heineken-mdm)
+
 
 </td>
 <td width="50%">
@@ -118,7 +118,7 @@ This repository showcases my analytical projects across four key domains, develo
 - Improved customer retention strategies
 - 95% user satisfaction rate
 
-[View Project →](./PowerBI-Projects/customer-journey)
+
 
 </td>
 </tr>
@@ -132,7 +132,6 @@ This repository showcases my analytical projects across four key domains, develo
 - 30% improvement in operational efficiency
 - Led enterprise-wide implementation
 
-[View Project →](./Python-Projects/banking-automation)
 
 </td>
 <td width="50%">
@@ -144,7 +143,6 @@ This repository showcases my analytical projects across four key domains, develo
 - Streamlined data workflows
 - Full lifecycle project management
 
-[View Project →](./PowerBI-Projects/lux-bi-solution)
 
 </td>
 </tr>
