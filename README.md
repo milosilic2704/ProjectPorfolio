@@ -3,10 +3,10 @@
 <div align="center">
 
 ![Data Analytics](https://img.shields.io/badge/Focus-Data%20Analytics-blue?style=for-the-badge)
-![SQL](https://img.shields.io/badge/SQL-Expert-orange?style=for-the-badge)
-![Power BI](https://img.shields.io/badge/Power%20BI-Advanced-yellow?style=for-the-badge)
+![SQL](https://img.shields.io/badge/SQL-Advanced-yellow?style=for-the-badge)
+![Power BI](https://img.shields.io/badge/Power%20BI-Expert-orange?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-Proficient-green?style=for-the-badge)
-![Excel](https://img.shields.io/badge/Excel-Advanced-red?style=for-the-badge)
+![Excel](https://img.shields.io/badge/Excel-Expert-red?style=for-the-badge)
 
 </div>
 
