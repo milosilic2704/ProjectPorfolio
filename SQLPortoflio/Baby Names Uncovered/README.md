@@ -5,7 +5,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-Expert-orange?style=for-the-badge&logo=mysql)
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis-Advanced-green?style=for-the-badge)
 ![Demographics](https://img.shields.io/badge/Demographics-Research-blue?style=for-the-badge)
-![Complexity](https://img.shields.io/badge/Complexity-⭐⭐⭐-yellow?style=for-the-badge)
+![Complexity](https://img.shields.io/badge/Complexity-⭐⭐⭐-lightgray?style=for-the-badge)
 
 </div>
 
