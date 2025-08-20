@@ -28,7 +28,7 @@ From **demographic analysis** to **e-commerce optimization**, each project demon
 ## 🚀 Featured Projects
 
 ### 📈 [Maven Fuzzy Factory: A Data-Driven Growth Story](./Maven%20Fuzzy%20Factory:%20A%20Data-Driven%20Growth%20Story%20for%20Investor%20using%20MySQL%20Analysis/)
-**Industry:** E-commerce | **Database:** MySQL | **Complexity:** ⭐⭐⭐⭐⭐
+**Industry:** E-commerce | **Database:** MySQL | **Complexity:** ⭐⭐⭐
 
 ### ⚾ [Moneyball in MySQL](./Moneyball%20in%20MySQL/)
 **Industry:** Sports Analytics | **Database:** MySQL | **Complexity:** ⭐⭐⭐⭐
