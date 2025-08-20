@@ -5,7 +5,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-Expert-orange?style=for-the-badge&logo=mysql)
 ![Database Design](https://img.shields.io/badge/Database%20Design-Advanced-red?style=for-the-badge)
 ![Data Architecture](https://img.shields.io/badge/Data%20Architecture-Expert-blue?style=for-the-badge)
-![Complexity](https://img.shields.io/badge/Complexity-⭐⭐⭐⭐⭐-yellow?style=for-the-badge)
+![Complexity](https://img.shields.io/badge/Complexity-⭐⭐⭐⭐-gray?style=for-the-badge)
 
 </div>
 
@@ -279,7 +279,7 @@ The company can now confidently launch new sales strategies, provide exceptional
 
 <div align="center">
 
-**🔗 [View Complete Code Repository](../)**  
-**📊 [Back to SQL Projects Portfolio](../)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/SQLPortoflio/Evolving%20the%20Maven%20Bear%20Builders%20DB/Milos_MavenBearBuilders_Course_Project.sql)**  
+**📊 [Back to SQL Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/SQLPortoflio)**
 
 </div>
