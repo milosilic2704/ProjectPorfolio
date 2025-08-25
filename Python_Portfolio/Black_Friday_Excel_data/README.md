@@ -27,7 +27,6 @@
 ## 🚀 Project Structure
 
 ### **PART 1: DATA PREPARATION**
-> *"Can you fill in those rows of data using Python?"*
 
 **Objectives:**
 1. Read and manipulate Excel data programmatically
@@ -37,7 +36,6 @@
 5. Write processed data back to Excel workbooks
 
 ### **PART 2: DATA ANALYSIS** 
-> *"Now the fun part – it's time for analysis!"*
 
 **Objectives:**
 1. Calculate key business metrics through data aggregation
@@ -74,8 +72,6 @@ def column_printer(sheet, column):
     for i in range(1, sheet.max_row + 1):
         print(f'{column}{i}', sheet[f'{column}{i}'].value)
 ```
-
-**Business Value**: Streamlined data validation process and eliminated need for manual Excel review during development.
 
 ---
 
@@ -252,27 +248,6 @@ location_revenue = aggregator(5, 2, order_dict)
 - **Strategic Insight**: Translating data findings into actionable business recommendations
 
 ---
-
-## 💼 Business Impact & Results
-
-### **Operational Excellence**
-- **Data Completeness**: Resolved missing tax and total calculations across entire dataset
-- **Process Automation**: Eliminated manual Excel manipulation, reducing error risk
-- **Scalable Solution**: Created reusable functions for ongoing sales analysis
-- **Audit Compliance**: Ensured accurate tax calculations meeting regulatory requirements
-
-### **Strategic Business Value**
-- **Performance Visibility**: Identified Mammoth as top-performing location
-- **Customer Insights**: Revealed opportunity for improved customer retention strategies  
-- **Inventory Planning**: Provided data foundation for location-specific stock decisions
-- **Revenue Optimization**: Highlighted Sun Valley as focus area for improvement initiatives
-
-### **Technical Achievements**
-- **Zero Manual Processing**: Fully automated Black Friday data analysis pipeline
-- **Flexible Architecture**: Aggregator function enables analysis across any dimension
-- **Data Integrity**: Maintained original data while adding calculated fields
-- **Professional Documentation**: Created maintainable code with clear function documentation
-
 ---
 
 ## 🏁 Conclusion
@@ -285,7 +260,7 @@ This Black Friday analysis project showcases the power of **Python for business 
 - **Flexible Analytics Framework**: Reusable functions enabling ongoing business analysis
 - **Strategic Insights**: Data-driven recommendations for location optimization and customer retention
 
-The project demonstrates expertise in **Python programming, Excel automation, financial modeling, and business intelligence** - essential skills for modern data-driven organizations. The combination of technical execution and business insight delivery makes this a comprehensive example of data analysis in retail operations.
+The project demonstrates solid knowledge in **Python programming, Excel automation, financial modeling, and business intelligence** - essential skills for modern data-driven organizations. The combination of technical execution and business insight delivery makes this a comprehensive example of data analysis in retail operations.
 
 Sally Snow now has both the complete dataset she needed and a powerful analytical framework for future sales performance analysis, positioning Maven Ski Shop for data-driven decision making in their competitive retail environment.
 
