@@ -293,7 +293,7 @@ Sally Snow now has both the complete dataset she needed and a powerful analytica
 
 <div align="center">
 
-**🔗 [View Complete Code Repository](../)**  
-**📊 [Back to Python Projects Portfolio](../)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Black_Friday_Excel_data/milos_maven_ski_shop_analysis.ipynb)**  
+**📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 </div>
