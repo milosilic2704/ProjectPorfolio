@@ -101,8 +101,6 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 
 **🔧 Business Process Automation**
 - Excel workflow optimization
-- Financial calculation automation
-- Multi-location tax compliance
 - Reporting and dashboard creation
 
 **📊 Executive Analytics**
