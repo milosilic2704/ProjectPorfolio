@@ -28,14 +28,14 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 
 ## 🚀 Featured Projects
 
-### 🎿 [Maven Ski Shop: Black Friday Sales Analysis](./Maven-Ski-Shop-Analysis/)
+### 🎿 [Maven Ski Shop: Black Friday Sales Analysis](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/Black_Friday_Excel_data)
 **Industry:** Retail Sports Equipment | **Technology:** Python + openpyxl | **Complexity:** ⭐⭐⭐
 
 > **Business Challenge:** Urgent Black Friday sales analysis with missing tax calculations and comprehensive business intelligence requirements
 
 ---
 
-### 🏢 [Maven MegaMart: Strategic Acquisition Analysis](./Maven-MegaMart-Acquisition/)
+### 🏢 [Maven MegaMart: Strategic Acquisition Analysis](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/Maven_MegaMart_Acquisition_Target_Data)
 **Industry:** M&A Due Diligence | **Technology:** Python + Pandas + NumPy | **Complexity:** ⭐⭐
 
 > **Business Challenge:** Confidential acquisition analysis for senior management requiring comprehensive due diligence on multi-million row transaction dataset
