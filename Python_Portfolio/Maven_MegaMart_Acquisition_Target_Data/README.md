@@ -283,7 +283,7 @@ The analysis framework developed for this evaluation can be leveraged for ongoin
 <div align="center">
 
 **🔗 [View Complete Analysis Repository](../)**  
-**📊 [Back to Python Projects Portfolio](../)**
+**📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main)**
 
 **⚠️ CONFIDENTIAL - Maven MegaMart Strategic Initiative**
 
