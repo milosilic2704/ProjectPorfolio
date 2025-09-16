@@ -29,93 +29,16 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 ## 🚀 Featured Projects
 
 ### 🎿 [Maven Ski Shop: Black Friday Sales Analysis](./Maven-Ski-Shop-Analysis/)
-**Industry:** Retail Sports Equipment | **Technology:** Python + openpyxl | **Complexity:** ⭐⭐⭐⭐
+**Industry:** Retail Sports Equipment | **Technology:** Python + openpyxl | **Complexity:** ⭐⭐⭐
 
 > **Business Challenge:** Urgent Black Friday sales analysis with missing tax calculations and comprehensive business intelligence requirements
-
-**Key Python Applications:**
-- **Excel Automation**: Seamless integration with openpyxl for data pipeline creation
-- **Financial Engineering**: Multi-location tax calculation system with business rule validation
-- **Data Structure Optimization**: Dictionary comprehensions and list processing for efficient analysis
-- **Business Intelligence**: Flexible aggregation functions enabling multi-dimensional reporting
-
-**Technical Highlights:**
-```python
-# Automated Excel processing with business logic
-order_dict = {
-    orders[f'A{order}'].value: [
-        orders[f'B{order}'].value,  # Customer ID
-        orders[f'C{order}'].value,  # Date  
-        orders[f'D{order}'].value,  # Subtotal
-        orders[f'G{order}'].value,  # Location
-        str(orders[f'H{order}'].value).split(', ')  # Items (auto-conversion)
-    ]
-    for order in range(2, orders.max_row + 1)
-    if orders[f'A{order}'].value is not None
-}
-
-# Multi-location tax automation
-for order in order_dict.values():
-    if order[3] == 'Sun Valley':
-        transaction = tax_calculator(order[2], .08)
-    elif order[3] == 'Mammoth':  
-        transaction = tax_calculator(order[2], .0775)
-    else:
-        transaction = tax_calculator(order[2], .06)
-```
-
-**Business Impact:**
-- **Complete Data Pipeline**: Automated Black Friday analysis eliminating manual Excel work
-- **Financial Compliance**: Location-aware tax calculations ensuring regulatory accuracy
-- **Strategic Insights**: Mammoth location generated 44% of revenue ($3,879) vs Sun Valley 15% ($1,268)
-- **Scalable Framework**: Reusable aggregation functions for ongoing sales analysis
 
 ---
 
 ### 🏢 [Maven MegaMart: Strategic Acquisition Analysis](./Maven-MegaMart-Acquisition/)
-**Industry:** M&A Due Diligence | **Technology:** Python + Pandas + NumPy | **Complexity:** ⭐⭐⭐⭐⭐
+**Industry:** M&A Due Diligence | **Technology:** Python + Pandas + NumPy | **Complexity:** ⭐⭐
 
 > **Business Challenge:** Confidential acquisition analysis for senior management requiring comprehensive due diligence on multi-million row transaction dataset
-
-**Key Python Applications:**
-- **Enterprise Data Processing**: Multi-million row dataset optimization and memory management
-- **Financial Engineering**: Complex discount calculations with business rule validation
-- **Strategic Analytics**: Customer segmentation and product portfolio analysis for executive decision-making
-- **Performance Optimization**: 50MB+ memory reduction through intelligent data type management
-
-**Technical Highlights:**
-```python
-# Enterprise-scale memory optimization
-transactions = transactions.astype({
-    'DAY': 'int16',
-    'QUANTITY': 'int32',
-    'STORE_ID': 'int16', 
-    'WEEK_NO': 'int8',
-})
-
-# Advanced discount analysis with business rules
-transactions['percentage_discount'] = np.where(
-    (transactions['total_discount'] / transactions['SALES_VALUE']).abs() > 1,
-    1,
-    np.where(
-        (transactions['total_discount'] / transactions['SALES_VALUE']).abs() < 0,
-        0,
-        (transactions['total_discount'] / transactions['SALES_VALUE']).abs()
-    )
-)
-
-# Strategic customer intelligence
-top10_households_value = (transactions  
-    .pivot_table(index='household_key', values='SALES_VALUE', aggfunc='sum')
-    .sort_values(by='SALES_VALUE', ascending=False)
-    .iloc[:10])
-```
-
-**Business Impact:**
-- **Executive Decision Support**: $6.7M revenue analysis supporting acquisition recommendation
-- **Customer Intelligence**: $3,176 average household value indicating premium customer base  
-- **Operational Assessment**: 217M+ units processed demonstrating mature logistics capabilities
-- **Strategic Recommendation**: Data-driven "PROCEED WITH ACQUISITION" conclusion for senior management
 
 ---
 
@@ -215,13 +138,6 @@ Each project in this portfolio demonstrates:
 - **List Processing** - Complex data transformation and validation
 - **Memory Optimization** - Enterprise-scale dataset management  
 - **Business Logic Implementation** - Financial modeling and compliance systems
-- **Error Handling** - Robust data validation and quality assurance
-
-**Enterprise Capabilities:**
-- **Large-Scale Processing** - Multi-million row dataset optimization
-- **Performance Tuning** - Memory management and execution speed optimization
-- **Automation Frameworks** - Reusable business process solutions
-- **Integration Architecture** - Seamless connection between Python and business systems
 
 ---
 
@@ -232,13 +148,11 @@ Each project folder contains:
 - **Jupyter Notebooks** - Fully documented analysis with code explanations and business insights
 - **Python Scripts** - Production-ready code with proper documentation and error handling
 - **Business Insights** - Executive summary with strategic recommendations and KPI analysis
-- **Technical Documentation** - Implementation details and optimization techniques
 
 ---
 
 <div align="center">
 
-### 💡 *"These projects represent strategic Python applications that transform business operations and enable data-driven executive decisions"*
 
 **🚀 Ready to explore? Each project showcases Python expertise solving real business challenges!**
 
