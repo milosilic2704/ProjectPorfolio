@@ -301,7 +301,7 @@ The analytical framework developed provides **ongoing capability for customer in
 
 <div align="center">
 
-**🔗 [View Complete Analysis Repository](../)**  
-**📊 [Back to Python Projects Portfolio](../)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Maven_MegaMart_Advanced_Customer_Behaviour/Milos_Maven_MegaMart_final_project.ipynb)**  
+**📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 </div>
