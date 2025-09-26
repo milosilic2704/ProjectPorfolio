@@ -42,6 +42,13 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 
 ---
 
+### 📊 [Maven MegaMart: Customer Behavior & Demographic Analytics](./Maven-MegaMart-Customer-Analytics/)
+**Industry:** Customer Analytics | **Technology:** Python + Pandas + NumPy | **Complexity:** ⭐⭐⭐
+
+> **Business Challenge:** Analyze customer behavior patterns across demographics to optimize marketing strategies and identify high-value customer segments for targeted growth
+
+---
+
 ## 🛠️ Technical Skills Demonstrated
 
 <table>
