@@ -49,6 +49,13 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 
 ---
 
+### 🏠 [AirBnB Paris: Market Analysis & Regulatory Impact Assessment](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/AirBnB_Paris_Market_Analysis)
+**Industry:** Hospitality & Real Estate | **Technology:** Python + Pandas + Matplotlib | **Complexity:** ⭐⭐⭐
+
+> **Business Challenge:** Quantify the impact of 2015 Paris short-term rental regulations on market growth and pricing dynamics across neighborhoods
+
+---
+
 ## 🛠️ Technical Skills Demonstrated
 
 <table>
