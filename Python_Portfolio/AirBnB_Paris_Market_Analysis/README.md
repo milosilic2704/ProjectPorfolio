@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-Expert-blue?style=for-the-badge&logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Advanced-green?style=for-the-badge&logo=pandas)
-![Data Visualization](https://img.shields.io/badge/Matplotlib-Advanced-orange?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Intermediate-green?style=for-the-badge&logo=pandas)
+![Data Visualization](https://img.shields.io/badge/Matplotlib-Intermediate-orange?style=for-the-badge)
 ![Complexity](https://img.shields.io/badge/Complexity-⭐⭐⭐-yellow?style=for-the-badge)
 
 </div>
@@ -225,28 +225,6 @@ paris_listings_over_time = (paris_listings
 
 ---
 
-## 🎓 Technical Skills Demonstrated
-
-### **Data Engineering**
-- **Data Cleaning & Validation**: Systematic quality assurance and outlier identification
-- **DateTime Processing**: Temporal data transformation for time-series analysis
-- **Data Filtering**: Strategic subsetting for geographic market focus
-- **Aggregation Techniques**: Multi-dimensional grouping and statistical summarization
-
-### **Analytical Capabilities**
-- **Market Profiling**: Comprehensive neighborhood and property type segmentation
-- **Time-Series Analysis**: Longitudinal trend identification and pattern recognition
-- **Regulatory Impact Assessment**: Quantitative evaluation of policy effectiveness
-- **Comparative Analysis**: Cross-neighborhood and temporal benchmarking
-
-### **Visualization Expertise**
-- **Multi-Chart Strategy**: Bar charts, line charts, and dual-axis visualizations
-- **Narrative Design**: Charts structured to tell clear analytical story
-- **Professional Formatting**: Clean, publication-ready visualizations
-- **Insight Communication**: Visual emphasis on key findings and trends
-
----
-
 ## 💼 Business Impact & Policy Insights
 
 ### **For Policymakers**
@@ -302,7 +280,7 @@ For hosts, investors, and policymakers, this analysis demonstrates that **well-d
 
 <div align="center">
 
-**🔗 [View Complete Analysis Repository](../)**  
-**📊 [Back to Python Projects Portfolio](../)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/AirBnB_Paris_Market_Analysis/Milos_AirBnB_Project.ipynb)**  
+**📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 </div>
