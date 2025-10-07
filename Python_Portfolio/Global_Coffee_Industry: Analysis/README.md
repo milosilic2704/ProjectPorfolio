@@ -300,6 +300,6 @@ The analysis includes **9 executive-ready visualizations** communicating complex
 <div align="center">
 
 **🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Global_Coffee_Industry%3A%20Analysis/Milos_Coffee_Project_Part1.ipynb)**  
-**📊 [Back to Python Projects Portfolio]((https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
+**📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 </div>
