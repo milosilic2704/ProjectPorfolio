@@ -56,6 +56,21 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 
 ---
 
+### ☕ [Global Coffee Industry: Deep Dive Analysis for Strategic Market Entry](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/Global_Coffee_Industry%3A%20Analysis)
+**Industry:** Commodity Trading & Agriculture | **Technology:** Python + Pandas + Matplotlib | **Complexity:** ⭐⭐⭐
+
+> **Business Challenge:** A major coffee trader sought independent market intelligence to evaluate Brazil's coffee production position relative to global competitors, identify market diversification opportunities, and understand price-consumption relationships across import markets.
+
+---
+
+### ☕ [Brazil's Global Coffee Market Dominance: A Data-Driven Report](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/Brazil_Coffee_Indutry_Analysis)
+**Industry:** Commodity Trading & Agriculture | **Technology:** Python + Pandas + Matplotlib | **Complexity:** ⭐⭐⭐
+
+> **Business Challenge:** Analyzing Brazil's place in the global coffee market, specifically its production share and the distribution of prices paid to growers. The primary technical challenge was using advanced Matplotlib features like GridSpec and Subplots to create a unified, executive-ready dashboard.
+
+---
+
+
 ## 🛠️ Technical Skills Demonstrated
 
 <table>
