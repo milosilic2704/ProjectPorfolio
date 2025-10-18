@@ -143,7 +143,7 @@ This analysis successfully utilizes advanced Matplotlib layout techniques (Meshg
 
 <div align="center">
 
-**🔗 [View Complete Code Repository](https://github.com/yourusername/brazil-coffee-analysis)**  
-**📊 [Back to Python Projects Portfolio](https://github.com/yourusername/portfolio)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Brazil_Coffee_Indutry_Analysis/Milos_Coffee_Project_Part2.ipynb)**  
+**📊 [Back to Python Projects Portfolio]([https://github.com/yourusername/portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 </div>
