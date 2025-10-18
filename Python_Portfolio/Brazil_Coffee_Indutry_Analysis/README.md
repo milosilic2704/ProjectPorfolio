@@ -1,10 +1,10 @@
-# ☕ Brazil Coffee Industry Analysis: Market Intelligence Report
+# ☕ Brazil's Global Coffee Market Dominance: A Data-Driven Report
 
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-Intermediate-blue?style=for-the-badge&logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Intermediate-green?style=for-the-badge&logo=pandas)
-![Data Visualization](https://img.shields.io/badge/Matplotlib-Intermediate-orange?style=for-the-badge)
+![Data Visualization](https://img.shields.io/badge/Matplotlib-Advanced-orange?style=for-the-badge)
 ![Complexity](https://img.shields.io/badge/Complexity-⭐⭐⭐-yellow?style=for-the-badge)
 
 </div>
@@ -13,252 +13,131 @@
 
 ## 📋 Project Overview
 
-**Project Type**: Industry Analysis & Visual Reporting  
-**Client**: Clarissa Café | **Consulting Firm**: Maven Consulting Group  
-**Technology Stack**: Python, Pandas, Matplotlib, NumPy  
-**Geographic Focus**: Brazil (World's Largest Coffee Producer)
+**Client**: Clarissa Café (Coffee Industry Client)  
+**Project Type**: Global Market Share & Pricing Analysis  
+**Technology Stack**: Python, Pandas, Matplotlib, NumPy, Matplotlib GridSpec  
+**Industry**: Coffee & Agricultural Commodities  
+**Focus**: Brazil's long-term production dominance (1990–2018) and international grower price distribution.
 
-**The Challenge**: Transform Brazil's complex coffee industry data from multiple CSV sources into a single, executive-ready visual report with brand-aligned colors representing Brazil's national flag.
+**The Challenge**: Clarissa Café commissioned a summary report that could combine complex multi-source data into a **single-figure visual report**. This required analyzing Brazil's place in the global coffee market, specifically its production share and the distribution of prices paid to growers. The primary technical challenge was using advanced Matplotlib features like **GridSpec** and **Subplots** to create a unified, executive-ready dashboard.
 
-**The Solution**: Multi-source data integration using Pandas, advanced reshaping techniques, and matplotlib's gridspec to create a unified dashboard featuring line charts, bar charts, and histograms styled with Brazil's flag colors (#009739 green, #FEDD00 yellow, #002776 blue).
+**The Solution**: An advanced data visualization solution that integrated global production and grower price data, performed multi-year trend and comparative analysis, and synthesized all findings into a cohesive, branded dashboard. The report clearly communicates Brazil's surging market share and the distinct price dynamics of key producing nations.
 
 ---
 
 ## 🎯 Project Objectives
 
-**Assignment Requirements** (Maven Consulting Group - Mid-Course Project):
+### **Analytical & Visualization Goals**
+1. **📊 Global Production Share** - Analyze and visualize Brazil's production share in 1990 and 2018 using **Donut Charts**.
+2. **📈 Long-Term Trend** - Compare Brazil's production against the 'Rest of the World' over time using a **Stacked Area Plot**.
+3. **💰 Top Nations Comparison** - Identify and visualize the production volume of the top 5 global coffee-producing nations (including a category for 'Other').
+4. **📦 Grower Price Distribution** - Analyze the distribution of prices paid to growers for Brazil, Colombia, Ethiopia, and the average for all other nations using a **2×2 Subplot Grid of Histograms**.
+5. **🎨 Integrated Dashboard** - Combine all findings into one polished, multi-panel report using **Matplotlib GridSpec**.
 
-1. **📊 Multi-Source Data Integration** - Read and consolidate multiple CSV files
-2. **🔄 Data Transformation** - Reshape data with Pandas for visualization
-3. **📈 Visual Analysis** - Build line charts, bar charts, and histograms
-4. **🎨 Brand Alignment** - Apply Brazil flag colors (#009739, #FEDD00, #002776)
-5. **🖼️ Integrated Dashboard** - Combine charts using meshgrid and subplots
-
-**Key Deliverable**: Single-figure executive report consolidating all insights for Clarissa Café stakeholders.
+### **Key Deliverables**
+- **Executive Single-Figure Dashboard** (Meshgrid Report)
+- **Time-Series Analysis** (Stack Plot)
+- **Market Composition Analysis** (Bar Chart and Pie Chart)
+- **Grower Price Distribution Analysis** (Subplot Histograms)
 
 ---
 
 ## 🛠️ Technical Implementation
 
-### **Data Loading & Quality Assessment**
+### **Phase 1: Data Acquisition & Transformation**
+
+Raw data from `total-production.csv` and `prices-paid-to-growers.csv` was loaded and transposed using Pandas for optimal analysis.
+
+#### **Production Data Reshaping**
+
+The core transformation involved calculating Brazil's production and the aggregate of the 'Other' countries to facilitate market share visualization and the Stacked Area Plot.
 
 ```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import matplotlib.gridspec as gridspec
-
-# Load datasets
+# Load and transpose the production dataset
 coffee_production = pd.read_csv("total-production.csv").T
-coffee_production.columns= coffee_production.iloc[0]
-coffee_production.drop("total_production", inplace=Tr
 
+# Calculate 'Other' category for comparative analysis
+brazil_vs_others = pd.DataFrame({
+    'Brazil': coffee_production['Brazil'].astype(float),
+    'Other': coffee_production.drop(columns=['Brazil']).astype(float).sum(axis=1)
+})
+
+# Identify and aggregate Top 5 nations for 2018
 ```
 
----
+#### **Grower Price Data Transformation**
 
-### **Data Reshaping & Transformation**
+The `prices-paid-to-growers.csv` file was cleaned, and a crucial 'Other Nations' column was created by taking the average price across all non-focus countries for a holistic view of the market.
 
 ```python
-# Convert to datetime and extract year
-production_data['harvest_date'] = pd.to_datetime(production_data['harvest_date'])
-production_data['year'] = production_data['harvest_date'].dt.year
+# Load and clean grower prices data
+prices_paid_to_growers = pd.read_csv("prices-paid-to-growers.csv").T.drop(9, axis=1)
 
-# Annual aggregation
-annual_production = production_data.groupby('year').agg({
-    'production_tons': 'sum',
-    'production_bags': 'sum',
-    'harvest_area_ha': 'sum'
-}).reset_index()
-
-# Regional analysis
-regional_summary = regional_data.groupby('state').agg({
-    'production_tons': 'sum',
-    'farms_count': 'sum'
-}).sort_values('production_tons', ascending=False)
+# Calculate the average price for all non-focus countries
+prices_paid_to_growers["Other Nations"] = prices_paid_to_growers.drop([
+    "Colombia", "Brazil", "Ethiopia"
+], axis=1).mean(axis=1)
 ```
 
 ---
 
-### **Brazil Flag Color Scheme**
+### **Phase 2: Integrated Dashboard Construction**
+
+The analysis was consolidated into a single figure using the Matplotlib GridSpec (a **12×12 grid**) to combine six charts, including two Donut Charts, a Stack Plot, a Bar Chart, a Pie Chart, and a Text Box.
+
+#### **Layout Strategy**
+
+| Section | Chart Type | Data Focus |
+|---------|-----------|------------|
+| **Top-Left** | Text Summary | Contextual overview of Brazil's market growth |
+| **Top-Center** | Donut Chart | Brazil's 29% Global Production Share in 1990 |
+| **Top-Right** | Donut Chart | Brazil's 37% Global Production Share in 2018 |
+| **Center** | Stacked Area Plot | Brazil's growing share versus Rest of World (1990-2018) |
+| **Bottom-Left** | Horizontal Bar Chart | Total production for Top 5 Nations + Rest of World (2018) |
+| **Bottom-Right** | Pie Chart | Composition of global production in 2018 |
 
 ```python
-# Official Brazil flag colors
-BRAZIL_COLORS = {
-    'green': '#009739',   # Verde
-    'yellow': '#FEDD00',  # Amarelo
-    'blue': '#002776'     # Azul
-}
+# Matplotlib GridSpec Implementation
+fig = plt.figure(constrained_layout=True, figsize=(12, 10))
+grid = gridspec.GridSpec(ncols=12, nrows=12, figure=fig)
 
-brazil_palette = [BRAZIL_COLORS['green'], BRAZIL_COLORS['yellow'], BRAZIL_COLORS['blue']]
+# Custom color scheme applied using green for Brazil and gray for 'Other' categories
 ```
 
 ---
 
-## 📊 Dashboard Visualizations
+## 📊 Visual Analysis & Key Insights
 
-### **Integrated Multi-Panel Layout**
+### **1. Market Dominance & Growth Trajectory**
 
-```python
-# Create comprehensive dashboard
-fig = plt.figure(figsize=(16, 12))
-gs = fig.add_gridspec(3, 2, hspace=0.3, wspace=0.3)
+**Brazil's share of global production rose significantly from 29% in 1990 to 37% in 2018.**
 
-# Configure all panels
-ax1 = fig.add_subplot(gs[0, 0])  # Production trends
-ax2 = fig.add_subplot(gs[0, 1])  # Regional comparison
-ax3 = fig.add_subplot(gs[1, 0])  # Distribution analysis
-ax4 = fig.add_subplot(gs[1, 1])  # Export markets
-ax5 = fig.add_subplot(gs[2, :])  # Productivity metrics
-```
+The Stacked Area Plot visually demonstrates that Brazil's output surged as the global market itself expanded by over 50%, cementing its place as the top producer.
+
+In 2018, the Top 5 producers were Brazil, Viet Nam, Colombia, Indonesia, and Ethiopia, with Brazil maintaining the clear lead.
 
 ---
 
-### **1. Production Trend Analysis**
+### **2. Grower Price Distribution**
 
-```python
-ax1.plot(annual_production['year'], 
-         annual_production['production_bags'] / 1_000_000,
-         color=BRAZIL_COLORS['green'], linewidth=2.5, marker='o')
-ax1.set_title('Brazil Coffee Production (2000-2022)', fontweight='bold')
-ax1.set_ylabel('Production (Million 60kg Bags)')
-ax1.grid(True, alpha=0.3)
-```
+The **2×2 subplot grid** compares the historical distribution of prices paid to growers:
 
-**Key Findings**: 
-- Positive long-term growth trend (~1.5% annually)
-- Biennial oscillation due to coffee tree biology
-- Climate events (2014, 2021) causing visible production dips
+**Brazil's Wide Distribution**: The distribution of prices paid to growers in Brazil is the most dispersed, suggesting greater price volatility or a wider range of quality tiers commanding diverse prices compared to other single nations.
 
----
+**Consistent Competitors**: The price distributions for Colombia, Ethiopia, and the Other Nations average are generally tighter, indicating a more concentrated historical price range.
 
-### **2. Regional Production Distribution**
-
-```python
-regional_summary.sort_values('production_tons').plot(
-    kind='barh', y='production_tons', ax=ax2,
-    color=BRAZIL_COLORS['green'], edgecolor=BRAZIL_COLORS['blue'])
-ax2.set_title('Top 10 Coffee-Producing States')
-ax2.set_xlabel('Production (Million Tons)')
-```
-
-**Geographic Intelligence**:
-- Minas Gerais: 50%+ national production
-- Top 3 states (MG, SP, ES): 85% of total output
-- High geographic concentration indicates supply chain risk
-
----
-
-### **3. Farm Size Distribution**
-
-```python
-ax3.hist(regional_data['farm_size_ha'], bins=50,
-         color=BRAZIL_COLORS['yellow'], edgecolor=BRAZIL_COLORS['blue'], alpha=0.7)
-ax3.set_title('Coffee Farm Size Distribution')
-ax3.set_xlabel('Farm Size (Hectares)')
-ax3.set_ylabel('Frequency')
-```
-
-**Industry Structure**:
-- 70% of farms below 10 hectares (smallholder dominance)
-- Median farm size: 5.2 hectares
-- Right-skewed distribution with large commercial estates
-
----
-
-### **4. Export Markets Analysis**
-
-```python
-export_top5 = export_pivot[top_destinations].iloc[-5:]
-export_top5.plot(kind='bar', stacked=True, ax=ax4, color=brazil_palette)
-ax4.set_title('Top Export Destinations (2018-2022)')
-ax4.legend(loc='upper left', fontsize=9)
-```
-
-**Trade Insights**:
-- US, Germany, Italy: Primary markets (55% of exports)
-- Geographic diversification across Americas, Europe, Asia
-- Premium market focus in developed economies
-
----
-
-### **5. Productivity Metrics**
-
-```python
-ax5_twin = ax5.twinx()
-ax5.plot(annual_production['year'], annual_production['productivity'],
-         color=BRAZIL_COLORS['green'], marker='o', label='Productivity')
-ax5_twin.plot(annual_production['year'], annual_production['production_bags']/1_000_000,
-              color=BRAZIL_COLORS['blue'], marker='s', label='Total Production')
-ax5.set_ylabel('Productivity (bags/ha)', color=BRAZIL_COLORS['green'])
-ax5_twin.set_ylabel('Production (M bags)', color=BRAZIL_COLORS['blue'])
-```
-
-**Efficiency Analysis**:
-- 20% productivity improvement (2000-2022)
-- Technology adoption driving gains
-- Sustainable intensification reducing land pressure
-
----
-
-## 📈 Key Insights & Strategic Value
-
-### **Market Intelligence Summary**
-
-**Production Dynamics:**
-- Brazil maintains ~40% global market share despite climate volatility
-- Biennial production cycles create predictable supply fluctuations
-- 20% productivity improvement demonstrates successful modernization
-
-**Geographic Concentration:**
-- Minas Gerais, São Paulo, Espírito Santo: 85% of national production
-- High concentration creates supply chain risk but enables efficiency
-- Regional specialization supports quality differentiation strategies
-
-**Industry Structure:**
-- 70% smallholder farms (<10 ha) alongside large commercial estates
-- Cooperative systems critical for smallholder market access
-- Scale economics drive mechanization and productivity gaps
-
-**Trade Patterns:**
-- US, Germany, Italy dominate export markets (55% combined)
-- Geographic diversification across Americas, Europe, Asia
-- Premium market focus reflects quality positioning strategy
-
----
-
-## 💼 Final Dashboard Assembly
-
-```python
-# Complete integrated dashboard
-plt.suptitle('Brazil Coffee Industry: Market Intelligence Report', 
-             fontsize=18, fontweight='bold', y=0.98)
-
-# Add client branding
-fig.text(0.99, 0.01, 'Prepared for: Clarissa Café | Maven Consulting Group', 
-         ha='right', fontsize=10, style='italic', color=BRAZIL_COLORS['blue'])
-
-# Export high-resolution output
-plt.savefig('brazil_coffee_executive_report.png', 
-            dpi=300, bbox_inches='tight', facecolor='white')
-plt.show()
-```
-
-**Deliverable Value:**
-- ✅ Single-page executive summary consolidating multi-source data
-- ✅ Brand-aligned visualization using Brazil flag colors
-- ✅ Professional formatting for stakeholder presentations
-- ✅ Actionable insights across production, trade, and efficiency dimensions
+**Strategic Business Intelligence**: The data confirms Brazil's market control and suggests that its supply can influence global market stability. The price volatility within Brazil, compared to competitors, highlights the country's diverse production capabilities, ranging from high-volume commodity to specialty-grade coffee.
 
 ---
 
 ## 🎓 Conclusion
 
-This analysis successfully transformed complex multi-source CSV datasets into an executive-ready visual intelligence report for Clarissa Café. The integrated dashboard leverages Pandas for advanced data reshaping and matplotlib's gridspec for professional multi-panel visualization, all styled with Brazil's national colors for brand coherence.
+This analysis successfully utilizes advanced Matplotlib layout techniques (Meshgrid and Subplots) and robust Pandas data preparation to deliver clear, actionable market intelligence. The single-figure report provides the client, Clarissa Café, with a high-level, data-driven synthesis of Brazil's global coffee industry standing, essential for strategic sourcing and risk management decisions.
 
-**Technical Achievement:** Advanced data engineering combining CSV integration, temporal analysis, geographic segmentation, and statistical visualization.
-
-**Business Impact:** Comprehensive market intelligence spanning production trends, regional dynamics, industry structure, trade patterns, and productivity metrics - enabling informed decision-making for coffee industry stakeholders.
+**Project Achievements:**
+- **Technical Execution**: Seamless integration of multiple visualizations into a unified 12×12 GridSpec dashboard
+- **Analytical Depth**: Quantified Brazil's long-term market share growth and mapped complex grower price dynamics
+- **Client Focus**: Delivered a professional, single-figure report that meets the executive communication requirements of the client
 
 ---
 
@@ -266,8 +145,5 @@ This analysis successfully transformed complex multi-source CSV datasets into an
 
 **🔗 [View Complete Code Repository](https://github.com/yourusername/brazil-coffee-analysis)**  
 **📊 [Back to Python Projects Portfolio](https://github.com/yourusername/portfolio)**
-
-**Prepared by**: [Your Name]  
-**Contact**: [your.email@example.com] | [LinkedIn](https://linkedin.com/in/yourprofile)
 
 </div>
