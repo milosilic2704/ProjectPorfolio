@@ -422,7 +422,7 @@ print(utah_timing)
 
 <div align="center">
 
-**🔗 [View Complete Jupyter Notebook](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Automotive_Auction_Analysis/Milos_car_analysis_final_project.ipynb)**  
+**🔗 [View Complete Jupyter Notebook](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Automotive_Auction_Industry/Milos_car_analysis_final_project.ipynb)**  
 **📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 </div>
