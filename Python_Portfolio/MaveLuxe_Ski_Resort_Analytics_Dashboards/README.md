@@ -403,6 +403,4 @@ The dashboards enable MaveLuxe to serve more customers faster while providing be
 **🔗 [View Complete Code Repository](../)**  
 **📊 [Back to Python Projects Portfolio](../)**
 
-**Built for MaveLuxe Travel Analytics**
-
 </div>
