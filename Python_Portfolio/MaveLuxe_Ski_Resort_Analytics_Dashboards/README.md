@@ -400,7 +400,7 @@ The dashboards enable MaveLuxe to serve more customers faster while providing be
 
 <div align="center">
 
-**🔗 [View Complete Code Repository](../)**  
-**📊 [Back to Python Projects Portfolio](../)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/MaveLuxe_Ski_Resort_Analytics_Dashboards/Milos_MaveLuxe_Analytics_Dashboards_project.ipynb)**  
+**📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 </div>
