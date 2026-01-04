@@ -70,7 +70,7 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 
 ---
 
-### ☕ [⛷️ MaveLuxe Ski Resort: Interactive Analytics Dashboard](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/MaveLuxe_Ski_Resort_Analytics_Dashboards)
+### [⛷️ MaveLuxe Ski Resort: Interactive Analytics Dashboard](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/MaveLuxe_Ski_Resort_Analytics_Dashboards)
 **Industry:** Travel & Tourism (Ski Resorts)  | **Technology:** Python, Dash, Plotly, Pandas | **Complexity:** ⭐⭐
 
 > **Business Challenge:** Travel agents at MaveLuxe were spending too much time manually analyzing ski resort data for North American customers. The company needed interactive tools to quickly compare resorts, analyze trends, and make data-driven recommendations.
