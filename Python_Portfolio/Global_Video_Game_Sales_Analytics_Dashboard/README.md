@@ -579,8 +579,8 @@ This dashboard transformed Mavendo Games' strategic planning process by providin
 
 <div align="center">
 
-**🔗 [View Complete Code Repository](../)**  
-**📊 [Back to Python Projects Portfolio](../)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Global_Video_Game_Sales_Analytics_Dashboard/Milos_Video_Games_Dashboard.ipynb)**  
+**📊 [Back to Python Projects Portfolio](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 **Built for Mavendo Games - Strategic Analytics Division**
 
