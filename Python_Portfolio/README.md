@@ -77,6 +77,13 @@ From **Excel automation** to **M&A due diligence**, each project demonstrates di
 
 ---
 
+### ⛷️ [Global Ski Resort Explorer: Advanced Interactive Dashboard](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio/Global_Ski_Resort_Explorer_Advanced_Dashboard)
+**Industry:** Travel & Tourism (Ski Resorts)  | **Technology:**  Python, Dash, Plotly, Dash Bootstrap Components | **Complexity:** ⭐⭐⭐
+
+> **Business Challenge:** After the success of the US/Canada dashboards, MaveLuxe wanted to expand globally. The VP of Analytics needed a single, unified application instead of multiple separate dashboards, covering ski resorts worldwide with advanced filtering and interactive features.
+
+---
+
 ## 🛠️ Technical Skills Demonstrated
 
 <table>
