@@ -546,8 +546,8 @@ This project represents the **culmination of advanced Dash development skills**,
 
 <div align="center">
 
-**🔗 [View Complete Code Repository](../)**  
-**📊 [Back to Python Projects Portfolio](../)**
+**🔗 [View Complete Code Repository](https://github.com/milosilic2704/ProjectPorfolio/blob/main/Python_Portfolio/Global_Ski_Resort_Explorer_Advanced_Dashboard/Milos_Final_project.ipynb)**  
+**📊 [Back to Python Projects Portfolio]([../](https://github.com/milosilic2704/ProjectPorfolio/tree/main/Python_Portfolio)**
 
 **Built for MaveLuxe Travel Analytics - Global Expansion**
 
