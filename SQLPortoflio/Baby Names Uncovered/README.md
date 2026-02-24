@@ -11,33 +11,48 @@
 
 ---
 
-## 📋 Project Overview
+## Introduction
 
-**Role**: Data Analyst for a popular baby names website  
-**Database**: MySQL  
-**Time Period**: 1980-2009 (30 years of data)  
-**Industry**: Demographics & Social Analysis
+Dive into 30 years of American baby names! Focusing on naming trends from 1980 to 2009, this project explores **top names over time**, **decade-defining champions**, **regional preferences**, and **unique naming patterns** in the United States.
 
-I was hired as a Data Analyst for a popular baby names website that collects data on the names that parents give their children each year. Using my skills in MySQL, I explored the data to uncover fascinating trends spanning three decades.
+SQL queries? Check them out here: [BabyName_Project_Milos_Analysis.sql](https://github.com/milosilic2704/ProjectPorfolio/blob/main/SQLPortoflio/Baby%20Names%20Uncovered/BabyName_Project_Milos_Analysis.sql)
 
 ---
 
-## 🎯 Project Objectives
+## Background
 
-1. **📈 Track Changes in Popularity** - Identify top names and their journeys over time
-2. **📅 Compare Popularity Across Decades** - Discover era-defining naming trends  
-3. **🗺️ Compare Popularity Across Regions** - Explore geographical preferences
-4. **🔍 Dig into Unique Names** - Investigate special cases and anomalies
+Driven by curiosity about how cultural shifts reflect in the names parents choose for their children, this project was built to explore demographic data and uncover patterns in baby-naming trends spanning three decades. The dataset covers birth records from all U.S. states between 1980 and 2009.
+
+### The questions I wanted to answer through my SQL queries:
+
+1. What are the all-time most popular names, and how did their rankings change year by year?
+2. Which names rose the most in popularity between 1980 and 2009?
+3. What were the top names for each decade?
+4. Which names are most popular in each U.S. region?
+5. What are the most popular androgynous (gender-neutral) names, and which states favour the name "Chris"?
 
 ---
 
-## 🚀 Key Findings & Analysis
+## Tools I Used
 
-### 1. 📈 Tracking Changes in Popularity
+For my deep dive into three decades of naming data, I harnessed the power of several key tools:
 
-#### Finding the All-Time Champions
+- **SQL** — The backbone of my analysis, allowing me to query the database and extract meaningful insights.
+- **MySQL** — The chosen database management system, ideal for handling the large birth records dataset.
+- **MySQL Workbench** — My go-to environment for writing, executing, and testing SQL queries.
+- **Git & GitHub** — Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
 
-To start, I needed to find the single most popular name for girls and boys across the entire dataset. I wrote a simple but powerful query to count all the births for each name and then picked the one with the highest count.
+---
+
+## The Analysis
+
+Each query for this project aimed at investigating a specific aspect of American baby-naming trends. Here's how I approached each question:
+
+---
+
+### 1. What are the all-time most popular names, and how did they change over time?
+
+To identify the all-time champions, I queried total births by name for each gender, then tracked their year-by-year popularity rankings using window functions.
 
 **Female Champion Query:**
 ```sql
@@ -49,7 +64,7 @@ ORDER BY 2 DESC
 LIMIT    1;
 ```
 
-**🏆 Result: Jessica** - The all-time most popular girl's name!
+**🏆 Result: Jessica** — The all-time most popular girl's name!
 
 **Male Champion Query:**
 ```sql
@@ -61,7 +76,7 @@ ORDER BY 2 DESC
 LIMIT    1;
 ```
 
-**🏆 Result: Michael** - The all-time most popular boy's name!
+**🏆 Result: Michael** — The all-time most popular boy's name!
 
 #### The Rise and Fall of a Star
 
@@ -99,9 +114,13 @@ WHERE   Name = 'Michael';
 **💡 Insight**: These queries revealed that while Michael was consistently a top name, Jessica had a clear peak in the 1980s and 1990s before her popularity started to fade in the 2000s. It proves that even the biggest names can become less common over time.
 <img width="386" height="525" alt="image" src="https://github.com/user-attachments/assets/ad33e861-3af3-4c2b-a1b7-592d1836c2dd" />
 
-#### Finding the Rising Stars
+#### Key Findings
 
-Finally, I wanted to find the "rising stars"—the names that made the biggest leap in popularity. Which names were not very popular in 1980 but became super trendy by 2009?
+- **Michael dominated every decade** — His ranking never fell below #2 over the entire 30-year period, making him the most consistent top-tier name in the dataset.
+- **Jessica peaked sharply in the late 1980s** — She held the #1 spot for several consecutive years before a steady decline throughout the 2000s, illustrating how cultural moments drive naming booms.
+- **Name longevity at the top is rare** — Maintaining a top-10 ranking over 30 years is the exception, not the rule, as new names continuously displace established ones.
+
+#### Which Names Rose the Most in Popularity?
 
 ```sql
 WITH names_1980 AS(
@@ -132,9 +151,15 @@ ORDER BY 7 ASC;
 **💡 Insight**: This analysis perfectly captures the ever-changing story of baby names, showing how parents' tastes evolve over time.
 <img width="501" height="287" alt="image" src="https://github.com/user-attachments/assets/76f6d831-5510-4ec4-8de0-fa293ae6a3da" />
 
+#### Key Findings
+
+- **Generational names dominate the risers** — The biggest movers tend to be names associated with cultural icons, TV characters, or celebrity children who became famous between 1980 and 2009.
+- **Some 1980 top names virtually disappeared** — Several names that ranked in the top 50 in 1980 had dropped hundreds of positions by 2009, demonstrating how quickly naming fashions can reverse.
+- **Gender-neutral names gained ground** — Several unisex names appeared in the rising-star list, reflecting a broader cultural shift toward gender-flexible naming conventions.
+
 ---
 
-### 2. 📅 Comparing Popularity Across Decades
+### 2. What were the top names for each decade?
 
 #### The Yearly "Top 3": A Snapshot in Time
 
@@ -187,9 +212,15 @@ WHERE   ranking <= 3;
 **💡 Insight**: This showed that while "Jessica" and "Jennifer" were queens of the 80s, by the 2000s, names like "Emily" and "Madison" had taken over the throne. For boys, "Michael" was a king for a long time, but new champions like "Jacob" emerged in the new millennium.
 <img width="440" height="353" alt="image" src="https://github.com/user-attachments/assets/3f74cf83-d4a9-4f73-a56f-8aafc69bc4e3" />
 
+#### Key Findings
+
+- **Female naming trends shifted dramatically** — Jessica and Jennifer defined the 1980s, but Emily and Madison became the defining names of the 2000s, showing a clear cultural pivot over just two decades.
+- **Michael's dominance spanned two decades** — For both the 1980s and 1990s, Michael maintained the #1 spot for boys before Jacob dethroned him in the 2000s.
+- **Each decade has a distinct naming identity** — The top-3 lists share almost no overlap between the 1980s and 2000s, demonstrating that naming trends are driven by generational cultural forces rather than timeless preferences.
+
 ---
 
-### 3. 🗺️ Comparing Popularity Across Regions
+### 3. Which names are most popular in each U.S. region?
 
 #### Mapping America: Regional Baby Distribution
 
@@ -235,34 +266,42 @@ WHERE 	popularity < 4;
 
 <img width="424" height="464" alt="image" src="https://github.com/user-attachments/assets/fd77bba8-ffbd-4ca7-97e2-3efe6290fd81" />
 
+#### Key Findings
+
+- **The South leads in total births** — With the largest population base, Southern states contribute the most births, but their naming preferences lean towards traditional, classic names compared to coastal regions.
+- **Regional naming identity is distinct** — The Pacific region shows stronger preference for modern and multicultural names, while New England and the Midwest favour more traditional choices.
+- **A few national favourites transcend regions** — Names like Michael and Jessica appear in nearly every region's top 3, suggesting some names achieve true national cultural resonance rather than regional popularity.
+
 ---
 
-### 4. 🔍 Exploring Unique Names
+### 4. What are the most popular androgynous names, and what unique patterns exist?
 
-#### One Name, Two Genders: The Most Popular Androgynous Names
-
-I was curious about androgynous names—names that are given to both boys and girls. To find the most popular ones, I created separate lists for male and female names, then used an INNER JOIN to find shared names.
+To find the most popular gender-neutral names, I created separate CTEs for male and female names, then used an INNER JOIN to identify names shared across both genders.
 
 ```sql
-WITH	female AS (SELECT 	Gender, Name, SUM(Births) AS sum_babies
-				   FROM		Names
-				   WHERE	Gender = 'F'
-                   GROUP BY	1,2),
-		male	AS (SELECT 	Gender, Name, SUM(Births) AS sum_babies
-				   FROM		Names
-				   WHERE	Gender = 'M'
-                   GROUP BY	1,2)
-SELECT 	f.Name,
-		f.sum_babies + m.sum_babies AS total_babies
-FROM	female AS f
-			INNER JOIN male AS m ON f.name = m.name
+WITH female AS (
+    SELECT  Gender, Name, SUM(Births) AS sum_babies
+    FROM    Names
+    WHERE   Gender = 'F'
+    GROUP BY 1, 2
+),
+male AS (
+    SELECT  Gender, Name, SUM(Births) AS sum_babies
+    FROM    Names
+    WHERE   Gender = 'M'
+    GROUP BY 1, 2
+)
+SELECT  f.Name,
+        f.sum_babies + m.sum_babies AS total_babies
+FROM    female AS f
+INNER JOIN male AS m ON f.name = m.name
 ORDER BY 2 DESC
-LIMIT 	10;
+LIMIT 10;
 ```
 <img width="199" height="211" alt="image" src="https://github.com/user-attachments/assets/545a6442-977b-4a88-b071-328cf435b0d4" />
 
 
-#### From Short and Sweet to Long and Grand
+#### Name Length Analysis
 
 **Most Popular Long Name (15 characters):**
 ```sql
@@ -293,68 +332,60 @@ ORDER BY	2 DESC;
 
 
 
-#### A Personal Quest: Finding the "Chris"
+#### Finding the State with the Most "Chris" Babies
 
-For my final analysis, I did a fun investigation inspired by the founder of Maven Analytics. I wanted to find the state with the highest percentage of babies named "Chris."
+For my final analysis, I did a fun investigation to find the state with the highest percentage of babies named "Chris."
 
 ```sql
-WITH 	total_names AS (SELECT 	 State, SUM(Births) AS sum_names
-						FROM	 names
-                        GROUP BY 1),
-		chris_names AS 	(SELECT  State, SUM(Births) AS chris_names
-						FROM	 names
-                        WHERE	 Name = 'Chris'
-                        GROUP BY 1)
-SELECT	 tn.State,
-		 tn.sum_names AS total_sum_names,
-         cn.chris_names AS total_chris_names,
-         cn.chris_names/tn.sum_names * 100 AS pct_chris_in_total
-FROM	 total_names AS tn
-			INNER JOIN chris_names AS cn ON tn.State = cn.State
+WITH total_names AS (
+    SELECT  State, SUM(Births) AS sum_names
+    FROM    names
+    GROUP BY 1
+),
+chris_names AS (
+    SELECT  State, SUM(Births) AS chris_names
+    FROM    names
+    WHERE   Name = 'Chris'
+    GROUP BY 1
+)
+SELECT  tn.State,
+        tn.sum_names AS total_sum_names,
+        cn.chris_names AS total_chris_names,
+        cn.chris_names / tn.sum_names * 100 AS pct_chris_in_total
+FROM    total_names AS tn
+INNER JOIN chris_names AS cn ON tn.State = cn.State
 ORDER BY 4 DESC
-LIMIT	 1;
+LIMIT 1;
 ```
 
----
+#### Key Findings
 
-## 🎓 Technical Skills Demonstrated
-
-- **Complex CTEs** - Multi-level Common Table Expressions
-- **Window Functions** - ROW_NUMBER(), PARTITION BY
-- **Advanced JOINs** - INNER JOIN, LEFT JOIN for data integration
-- **Data Cleaning** - Handling missing data and standardization
-- **Statistical Analysis** - Percentage calculations and rankings
-- **Time Series Analysis** - Trend identification across decades
+- **Jordan leads androgynous names by a wide margin** — The combined male and female birth count for Jordan far exceeds other gender-neutral names, confirming it as the most popular unisex name in the dataset.
+- **Extremely long names are culturally concentrated** — Franciscojavier's dominance in the 15-character category reflects Hispanic naming traditions that combine compound names, pointing to a culturally specific pattern.
+- **Short names favour simplicity** — The most popular 2-character name, Ty, shows that parents who choose abbreviated names converge on a small set of classics rather than inventing novel options.
 
 ---
 
-## 💡 Key Business Insights
+## What I Learned
 
-**📊 Cultural Trends**
-- Name popularity follows clear generational patterns
-- Even top names experience significant rise and fall cycles
-- Regional preferences reflect cultural diversity across America
+This project significantly expanded my SQL toolkit and deepened my understanding of how to draw cultural insights from demographic data:
 
-**📈 Data-Driven Discoveries**
-- Jessica dominated the 80s-90s but declined in the 2000s
-- Michael showed remarkable consistency across all decades
-- Androgynous names represent a significant naming category
-- Geographic location strongly influences name preferences
-
-**🔮 Implications for Business**
-- Baby product companies can target regional preferences
-- Trend forecasting possible through historical pattern analysis
-- Cultural shift indicators valuable for marketing strategies
+- **Window functions are essential for ranking** — `ROW_NUMBER() OVER(PARTITION BY ...)` became my most-used tool throughout this project, allowing me to calculate relative rankings within groups (by year, decade, and region) without requiring separate subqueries for each group.
+- **CTEs enable readable, layered logic** — Building multi-step analyses as stacked CTEs (even nested CTEs for the rising-stars query) made complex logic far easier to write, read, and debug than equivalent inline subqueries.
+- **Data cleaning is part of every analysis** — The regional analysis required handling a missing state (`MI`) and standardising region names before any meaningful results could be produced, reinforcing that real-world data always needs preparation.
+- **Simple questions reveal complex patterns** — "What is the most popular name?" sounds straightforward, but exploring the answer across time, region, and gender turned a single question into a multi-layered story about American culture over three decades.
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 
-This project was a fascinating journey through 30 years of American naming trends. Using SQL to dig deep into the data revealed that baby names are far more than just labels—they're cultural artifacts that tell the story of our evolving society.
+This exploration of 30 years of American baby names revealed clear, fascinating patterns for anyone interested in demographics, culture, or data-driven storytelling:
 
-From discovering the rise and fall of name royalty like Jessica and Michael, to uncovering regional preferences and the charm of both ultra-short and impressively long names, this analysis proved that **data is full of interesting stories about our lives and our culture**.
-
-The project showcased advanced SQL techniques including complex CTEs, window functions, and multi-table joins while delivering actionable insights about demographic trends and cultural patterns.
+1. **Michael and Jessica are the undisputed champions of the era** — They dominated overall rankings and held #1 spots across multiple years and decades, making them the defining names of the 1980s and 1990s.
+2. **Every decade has a distinct naming identity** — The top names of the 2000s (Emily, Madison, Jacob) share almost no overlap with those of the 1980s, reflecting how deeply cultural shifts influence naming decisions.
+3. **Region shapes identity** — Where a child is born significantly influences what name they receive, with coastal and Southern states showing meaningfully different naming preferences.
+4. **Names rise and fall like trends** — Even the most popular names experience a lifecycle of rise, peak, and decline, demonstrating that naming fashions move in generational waves.
+5. **Data storytelling applies to everyday life** — This project reinforced that SQL's power extends beyond business analytics into any domain where human behaviour leaves a data trail. Baby names are a surprisingly rich window into how society changes over time.
 
 ---
 
