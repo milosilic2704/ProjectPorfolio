@@ -45,6 +45,9 @@ From **demographic analysis** to **e-commerce optimization**, each project demon
 ### 🔄 [Evolving the Maven Bear Builders DB](./Evolving%20the%20Maven%20Bear%20Builders%20DB/)
 **Industry:** Database Architecture | **Database:** MySQL | **Complexity:** ⭐⭐⭐⭐
 
+### 💻 [Data Job Market Analysis](https://github.com/milosilic2704/ProjectPorfolio/tree/main/SQLPortoflio/Job_Analysis)
+**Industry:** Job Market Analysis | **Database:** PostgreSQL | **Complexity:** ⭐⭐
+
 
 ## 🛠️ Technical Skills Demonstrated
 
