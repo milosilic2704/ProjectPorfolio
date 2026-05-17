@@ -14,7 +14,7 @@
 
 ## 👋 About Me
 
-Welcome to my data analytics portfolio! I'm **Miloš Ilić**, a dedicated and results-oriented data management leader with over **15 years of experience** driving transformative business outcomes. Currently serving as **Senior Principal - Data Insights Capability Lead** at Valcon SEE, I specialize in turning complex data into strategic business assets.
+Welcome to my data analytics portfolio! I'm **Miloš Ilić**, a dedicated and results-oriented data management leader with over **16 years of experience** driving transformative business outcomes. Currently serving as **Senior Principal - Data Insights Capability Lead** at Valcon SEE, I specialize in turning complex data into strategic business assets.
 
 ### 🎯 My Journey
 - **Education**: PhD in Economics (Accounting & Finance) from University of Novi Sad
